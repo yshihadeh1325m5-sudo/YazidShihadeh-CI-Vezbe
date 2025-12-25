@@ -27,5 +27,9 @@ namespace Calculator
         {
             return a * b;
         }
+        public double Koren(int a)
+        {
+            return Math.Sqrt(a);
+        }
     }
 }

@@ -33,4 +33,10 @@ public class CalculatorServiceTests
         var result = _calculator.multiply(2, 3);
         Assert.Equal(4, result);
     }
+    [Fact]
+    public void sqrt_ReturnsCorrectSqrt()
+    {
+        var result = _calculator.Koren(9);
+        Assert.Equal(3, result);
+    }
 }
