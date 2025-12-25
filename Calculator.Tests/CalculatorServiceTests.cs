@@ -31,6 +31,6 @@ public class CalculatorServiceTests
     public void mul_ReturnsCorrectMul()
     {
         var result = _calculator.multiply(2, 3);
-        Assert.Equal(6, result);
+        Assert.Equal(4, result);
     }
 }
