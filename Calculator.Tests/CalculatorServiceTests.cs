@@ -27,4 +27,10 @@ public class CalculatorServiceTests
             _calculator.Divide(10, 0));
        
     }
+    [Fact]
+    public void mul_ReturnsCorrectMul()
+    {
+        var result = _calculator.multiply(2, 3);
+        Assert.Equal(6, result);
+    }
 }
