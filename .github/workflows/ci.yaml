@@ -1,15 +1,16 @@
-name: CI
+name: CI-Vezbe-Raf
 
 on:
   push:
   pull_request:
 
 jobs:
-  build-test:
+  build-test-latest:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: checkout
+        uses: actions/checkout@v4
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
